@@ -10,8 +10,7 @@ const Card = ({bookd}) => {
     {
       bookd.map((item)=>{
         let thumbnail=item.volumeInfo.imageLinks && item.volumeInfo.imageLinks.smallThumbnail;
-//         let subtitle=item.volumeInfo.subtitle;
-        if(thumbnail!==undefined && subtitle!==undefined)
+        if(thumbnail!==undefined)
         {
         return(
           <div key={index++}>
