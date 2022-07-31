@@ -10,7 +10,7 @@ const Card = ({bookd}) => {
     {
       bookd.map((item)=>{
         let thumbnail=item.volumeInfo.imageLinks && item.volumeInfo.imageLinks.smallThumbnail;
-        let subtitle=item.volumeInfo.subtitle;
+//         let subtitle=item.volumeInfo.subtitle;
         if(thumbnail!==undefined && subtitle!==undefined)
         {
         return(
@@ -19,7 +19,7 @@ const Card = ({bookd}) => {
           <img src={thumbnail} alt="" />
           <div className="bottom" >
             <h3 className="title">{item.volumeInfo.title}</h3>
-            <p className="amount">{subtitle}</p>
+            <p className="amount">Click Here</p>
           </div>
           </div>
           <Modal show={show} item={bookItem} onClose={()=>{setShow(false)}}/>
